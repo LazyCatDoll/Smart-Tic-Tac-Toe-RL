@@ -10,4 +10,5 @@
 
     <dependencies>
         <dependency>
-            <groupId>edu.brown.cs.burlap</grou
+            <groupId>edu.brown.cs.burlap</groupId>
+    
