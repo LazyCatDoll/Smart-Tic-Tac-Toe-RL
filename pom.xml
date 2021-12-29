@@ -11,4 +11,5 @@
     <dependencies>
         <dependency>
             <groupId>edu.brown.cs.burlap</groupId>
-            <artifactId>burlap</artifact
+            <artifactId>burlap</artifactId>
+   
