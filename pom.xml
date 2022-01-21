@@ -13,4 +13,5 @@
             <groupId>edu.brown.cs.burlap</groupId>
             <artifactId>burlap</artifactId>
             <version>3.0.0</version>
-        </depende
+        </dependency>
+    </
