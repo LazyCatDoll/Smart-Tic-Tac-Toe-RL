@@ -19,4 +19,5 @@
 
     <build>
         <plugins>
-            <pl
+            <plugin>
+       
