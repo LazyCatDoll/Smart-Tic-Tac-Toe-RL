@@ -20,4 +20,5 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</g
+                <groupId>org.codehaus.mojo</groupId>
+        
