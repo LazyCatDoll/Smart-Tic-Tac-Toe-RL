@@ -26,4 +26,5 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>java</goa
+                            <goal>java</goal>
+          
