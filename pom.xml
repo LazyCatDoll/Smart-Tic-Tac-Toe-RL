@@ -28,4 +28,4 @@
                         <goals>
                             <goal>java</goal>
                         </goals>
-                    </e
+                    </execution>
