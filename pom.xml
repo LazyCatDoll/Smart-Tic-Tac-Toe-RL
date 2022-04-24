@@ -29,4 +29,5 @@
                             <goal>java</goal>
                         </goals>
                     </execution>
-                </executi
+                </executions>
+     
