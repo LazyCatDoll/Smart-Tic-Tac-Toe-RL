@@ -30,4 +30,5 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugi
+            </plugin>
+         
