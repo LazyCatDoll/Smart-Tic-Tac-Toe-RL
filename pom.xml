@@ -39,4 +39,5 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-        </plugin
+        </plugins>
+    <
