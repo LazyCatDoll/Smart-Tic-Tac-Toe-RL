@@ -40,4 +40,5 @@
                 </configuration>
             </plugin>
         </plugins>
-    <
+    </build>
+
