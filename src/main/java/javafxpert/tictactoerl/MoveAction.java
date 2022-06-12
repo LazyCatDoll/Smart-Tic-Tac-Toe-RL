@@ -31,3 +31,8 @@ public class MoveAction implements Action {
 
   public MoveAction(int actionId) {
     this.actionId = actionId;
+  }
+
+  public int getActionId() {
+    return actionId;
+  }
