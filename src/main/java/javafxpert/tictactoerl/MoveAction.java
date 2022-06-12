@@ -36,3 +36,8 @@ public class MoveAction implements Action {
   public int getActionId() {
     return actionId;
   }
+
+  @Override
+  public String actionName() {
+    return MoveActionType.BASE_ACTION_NAME + actionId;
+  }
