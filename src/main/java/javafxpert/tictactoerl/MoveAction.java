@@ -59,3 +59,11 @@ public class MoveAction implements Action {
 
   @Override
   public int hashCode() {
+    return actionId;
+  }
+
+  @Override
+  public String toString() {
+    return actionName();
+  }
+}
