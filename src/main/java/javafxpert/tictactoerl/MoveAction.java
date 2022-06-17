@@ -41,3 +41,11 @@ public class MoveAction implements Action {
   public String actionName() {
     return MoveActionType.BASE_ACTION_NAME + actionId;
   }
+
+  @Override
+  public Action copy() {
+    return new MoveAction(actionId);
+  }
+
+  @Override
+  public boolean equals(Object o) {
