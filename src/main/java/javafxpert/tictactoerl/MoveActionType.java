@@ -1,2 +1,2 @@
 /*
- * Copyright 2016 the original autho
+ * Copyright 2016 the original author or autho
