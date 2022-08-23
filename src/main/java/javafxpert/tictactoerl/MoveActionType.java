@@ -15,4 +15,4 @@
  */
 package javafxpert.tictactoerl;
 
-import burlap.mdp.core.act
+import burlap.mdp.core.action.Ac
