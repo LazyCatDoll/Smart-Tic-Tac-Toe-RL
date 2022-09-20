@@ -23,4 +23,4 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author James L. Weav
+ * @author James L. Weaver (Twitter
