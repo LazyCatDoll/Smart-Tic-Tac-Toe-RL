@@ -25,4 +25,4 @@ import java.util.List;
 /**
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
-public class MoveActionType 
+public class MoveActionType impleme
