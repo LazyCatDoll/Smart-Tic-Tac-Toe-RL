@@ -26,4 +26,4 @@ import java.util.List;
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
 public class MoveActionType implements ActionType {
-  public static String BASE_ACTION_NA
+  public static String BASE_ACTION_NAME = "moveActio
