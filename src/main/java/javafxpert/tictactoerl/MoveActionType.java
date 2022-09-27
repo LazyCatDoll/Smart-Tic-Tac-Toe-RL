@@ -26,4 +26,4 @@ import java.util.List;
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
 public class MoveActionType implements ActionType {
-  public static
+  public static String BASE
