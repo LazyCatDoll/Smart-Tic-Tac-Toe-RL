@@ -29,4 +29,4 @@ public class MoveActionType implements ActionType {
   public static String BASE_ACTION_NAME = "moveAction";
 
   @Override
-  public Str
+  public String typeName(
