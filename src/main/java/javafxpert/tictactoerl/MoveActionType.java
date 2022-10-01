@@ -30,4 +30,4 @@ public class MoveActionType implements ActionType {
 
   @Override
   public String typeName() {
-    return BA
+    return BASE_ACTION
