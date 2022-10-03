@@ -33,4 +33,4 @@ public class MoveActionType implements ActionType {
     return BASE_ACTION_NAME;
   }
 
-  @O
+  @Override
