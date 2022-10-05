@@ -34,4 +34,4 @@ public class MoveActionType implements ActionType {
   }
 
   @Override
-  public Action associa
+  public Action associatedActio
