@@ -35,4 +35,4 @@ public class MoveActionType implements ActionType {
 
   @Override
   public Action associatedAction(String strRep) {
-    return new MoveAction(0); //TODO:
+    return new MoveAction(0); //TODO: Ascer
