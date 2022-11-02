@@ -39,4 +39,5 @@ public class MoveActionType implements ActionType {
   }
 
   @Override
-  public List<Action> allApplicableActions(State state) 
+  public List<Action> allApplicableActions(State state) {
+    List
