@@ -40,4 +40,4 @@ public class MoveActionType implements ActionType {
 
   @Override
   public List<Action> allApplicableActions(State state) {
-    List<Action> applicableActio
+    List<Action> applicableActions = new Arra
