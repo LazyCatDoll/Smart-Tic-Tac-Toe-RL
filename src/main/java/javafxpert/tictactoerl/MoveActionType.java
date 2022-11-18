@@ -41,4 +41,6 @@ public class MoveActionType implements ActionType {
   @Override
   public List<Action> allApplicableActions(State state) {
     List<Action> applicableActions = new ArrayList<>();
-    TicTacToeState tttState = (TicTacToeState)sta
+    TicTacToeState tttState = (TicTacToeState)state;
+
+    Str
