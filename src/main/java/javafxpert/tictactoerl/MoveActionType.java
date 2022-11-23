@@ -43,4 +43,4 @@ public class MoveActionType implements ActionType {
     List<Action> applicableActions = new ArrayList<>();
     TicTacToeState tttState = (TicTacToeState)state;
 
-    String gameStatus = (String)tttState.get(TicTacToeStat
+    String gameStatus = (String)tttState.get(TicTacToeState.VAR_GAME_STAT
