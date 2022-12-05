@@ -45,4 +45,4 @@ public class MoveActionType implements ActionType {
 
     String gameStatus = (String)tttState.get(TicTacToeState.VAR_GAME_STATUS);
     if (gameStatus.equals(TicTacToeState.GAME_STATUS_IN_PROGRESS)) {
-      String g
+      String gameBoard = 
