@@ -48,4 +48,4 @@ public class MoveActionType implements ActionType {
       String gameBoard = (String)tttState.get(TicTacToeState.VAR_GAME_BOARD);
       for (int i = 0; i < TicTacToeState.NUM_CELLS; i++) {
         if (gameBoard.charAt(i) == TicTacToeState.EMPTY) {
-          applic
+          applicableAction
