@@ -49,4 +49,5 @@ public class MoveActionType implements ActionType {
       for (int i = 0; i < TicTacToeState.NUM_CELLS; i++) {
         if (gameBoard.charAt(i) == TicTacToeState.EMPTY) {
           applicableActions.add(new MoveAction(i));
-    
+        }
+  
