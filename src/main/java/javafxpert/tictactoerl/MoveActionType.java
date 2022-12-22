@@ -50,4 +50,5 @@ public class MoveActionType implements ActionType {
         if (gameBoard.charAt(i) == TicTacToeState.EMPTY) {
           applicableActions.add(new MoveAction(i));
         }
+      }
   
