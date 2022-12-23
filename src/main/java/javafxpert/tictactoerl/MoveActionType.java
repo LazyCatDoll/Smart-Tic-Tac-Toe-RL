@@ -51,4 +51,5 @@ public class MoveActionType implements ActionType {
           applicableActions.add(new MoveAction(i));
         }
       }
-  
+    }
+   
