@@ -52,4 +52,5 @@ public class MoveActionType implements ActionType {
         }
       }
     }
-    return applicableActi
+    return applicableActions;
+  }
