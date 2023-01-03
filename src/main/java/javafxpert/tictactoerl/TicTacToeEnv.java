@@ -30,3 +30,14 @@ import java.util.logging.XMLFormatter;
 
 /**
  * @author James L. Weaver (Twitter: @JavaFXpert)
+ */
+public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
+  private static int WIN_REWARD = 10;
+  private static int LOSE_REWARD = -10;
+  private static int MOVE_REWARD = -1;
+
+  /**
+   * String representation of cells on the game board.
+   * For example: "XOIIXOXIO"
+   */
+  private StringBuffer gameBoard;
