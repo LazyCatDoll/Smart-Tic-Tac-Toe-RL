@@ -50,3 +50,17 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
 
   /**
    * Indicates whether the the game is in the terminal state
+   */
+  private boolean terminated = false;
+
+  /**
+   * Reward given for the current action
+   */
+  private int reward = 0;
+
+  /**
+   * Most recent state, to be returned by currentObservation() method
+   */
+  TicTacToeState currentObservationState;
+
+  protected List<EnvironmentObserver> observers = new LinkedList<EnvironmentObserver>();
