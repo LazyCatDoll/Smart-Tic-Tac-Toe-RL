@@ -64,3 +64,13 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
   TicTacToeState currentObservationState;
 
   protected List<EnvironmentObserver> observers = new LinkedList<EnvironmentObserver>();
+
+  /**
+   * Mark that the player embedded in the environment plays
+   */
+  private char envPlayerMark = TicTacToeState.O_MARK;
+
+  /**
+   * Mark that the opposing player plays
+   */
+  private char opposingPlayerMark = TicTacToeState.X_MARK;
