@@ -82,3 +82,15 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
   @Override
   public void resetEnvironment() {
     gameBoard = new StringBuffer(TicTacToeState.EMPTY_BOARD);
+    if (envPlayerMark == TicTacToeState.X_MARK) {
+      playRandomCell();
+    }
+    gameStatus = TicTacToeState.GAME_STATUS_IN_PROGRESS;
+
+    currentObservationState = new TicTacToeState(gameBoard.toString(), gameStatus);
+
+    terminated = false;
+  }
+
+  @Override
+  public void addObservers(EnvironmentObserver... observers) {
