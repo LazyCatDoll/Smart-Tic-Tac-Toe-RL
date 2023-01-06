@@ -74,3 +74,11 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
    * Mark that the opposing player plays
    */
   private char opposingPlayerMark = TicTacToeState.X_MARK;
+
+  public TicTacToeEnv() {
+    resetEnvironment();
+  }
+
+  @Override
+  public void resetEnvironment() {
+    gameBoard = new StringBuffer(TicTacToeState.EMPTY_BOARD);
