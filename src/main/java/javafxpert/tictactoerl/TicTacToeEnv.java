@@ -118,3 +118,14 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
 
   @Override
   public State currentObservation() {
+    return currentObservationState;
+  }
+
+  @Override
+  public EnvironmentOutcome executeAction(Action action) {
+    MoveAction moveAction = (MoveAction)action;
+
+    TicTacToeState priorState = new TicTacToeState(gameBoard.toString(), gameStatus);
+
+    // actionId is the same as the cell number (0 - 8) of the move
+    int cellNum = moveAction.getActionId();
