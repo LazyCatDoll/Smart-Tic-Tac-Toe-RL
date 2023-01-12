@@ -94,3 +94,12 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
 
   @Override
   public void addObservers(EnvironmentObserver... observers) {
+    for(EnvironmentObserver o : observers){
+      this.observers.add(o);
+    }
+  }
+
+  @Override
+  public void clearAllObservers() {
+    this.observers.clear();
+  }
