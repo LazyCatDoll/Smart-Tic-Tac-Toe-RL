@@ -129,3 +129,12 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
 
     // actionId is the same as the cell number (0 - 8) of the move
     int cellNum = moveAction.getActionId();
+
+    if (cellNum < 0 || cellNum >= TicTacToeState.NUM_CELLS ||
+        (gameBoard.charAt(cellNum) != TicTacToeState.EMPTY)) {
+
+      // Illegal move attempted so don't change
+      System.out.println("Illegal move attempted to cell " + cellNum);
+    }
+    else {
+      gameBoard.setCharAt(cellNum, opposingPlayerMark);
