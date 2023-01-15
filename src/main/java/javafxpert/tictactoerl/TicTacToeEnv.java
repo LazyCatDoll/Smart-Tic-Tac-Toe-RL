@@ -138,3 +138,12 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
     }
     else {
       gameBoard.setCharAt(cellNum, opposingPlayerMark);
+    }
+
+    gameStatus = evalGameStatus();
+    //if (gameStatus.equals(envPlayerMark)) {
+    if (gameStatus.toCharArray()[0] == envPlayerMark) {
+      reward = LOSE_REWARD;
+      terminated = true;
+    }
+    else if (gameStatus.toCharArray()[0] == opposingPlayerMark) {
