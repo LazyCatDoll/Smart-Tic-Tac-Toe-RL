@@ -170,3 +170,9 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
       //blockOrPlayRandom();
 
       // Uncomment to employ a strategy that randomly places "O" except when
+      // there are opportunities to play third "O" in a row, or to block an "X" three-in-a row
+      //winOrblockOrPlayRandom();
+
+      // Uncomment to employ a strategy that prefers center and random corner placement,
+      // except when there are opportunities to play a third "O" in a row, or block an "X" three-in-a row
+      winOrBlockOrCenterOrRandomCornerOrPlayRandom();
