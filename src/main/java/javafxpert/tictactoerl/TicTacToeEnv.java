@@ -161,3 +161,12 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
       terminated = false;
 
       // Uncomment to employ a strategy of playing the first empty cell with an "O"
+      //playFirstEmptyCell();
+
+      // Uncomment to employ a strategy of playing a completely random empty cell with an "O"
+      //playRandomCell();
+
+      // Uncomment to employ a strategy that randomly places "O" except when there are opportunities to block an "X" three-in-a row
+      //blockOrPlayRandom();
+
+      // Uncomment to employ a strategy that randomly places "O" except when
