@@ -196,3 +196,18 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
     }
 
     TicTacToeState newState = new TicTacToeState(gameBoard.toString(), gameStatus);
+
+    currentObservationState = newState.copy();
+
+    EnvironmentOutcome environmentOutcome =
+        new EnvironmentOutcome(priorState, action, newState, reward, terminated);
+
+    return environmentOutcome;
+  }
+
+  @Override
+  public double lastReward() {
+    return reward;
+  }
+
+  @Override
