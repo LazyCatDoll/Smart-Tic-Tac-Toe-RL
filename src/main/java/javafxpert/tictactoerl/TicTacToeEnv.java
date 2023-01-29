@@ -183,3 +183,16 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
         terminated = true;
       }
       else if (gameStatus.toCharArray()[0] == opposingPlayerMark) {
+
+        // TODO: Consider removing this condition, as it doen't seem possible to encounter
+        reward = WIN_REWARD;
+        terminated = true;
+      }
+      else if (gameStatus.equals(TicTacToeState.GAME_STATUS_CATS_GAME)) {
+        // TODO: Consider removing this condition, as it doen't seem possible to encounter
+        reward = MOVE_REWARD;
+        terminated = true;
+      }
+    }
+
+    TicTacToeState newState = new TicTacToeState(gameBoard.toString(), gameStatus);
