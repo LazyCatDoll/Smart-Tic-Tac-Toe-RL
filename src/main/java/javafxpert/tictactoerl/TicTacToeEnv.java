@@ -211,3 +211,16 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
   }
 
   @Override
+  public boolean isInTerminalState() {
+    return terminated;
+  }
+
+  /**
+   * Indicate to the environment which mark it will play as (X or O)
+   * @param envPlayerMark
+   */
+  public void setEnvPlayerMark(char envPlayerMark) {
+    this.envPlayerMark = envPlayerMark;
+    if (envPlayerMark == TicTacToeState.X_MARK) {
+      opposingPlayerMark = TicTacToeState.O_MARK;
+    }
