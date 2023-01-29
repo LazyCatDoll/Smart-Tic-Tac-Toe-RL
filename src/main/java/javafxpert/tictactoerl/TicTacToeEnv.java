@@ -176,3 +176,10 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
       // Uncomment to employ a strategy that prefers center and random corner placement,
       // except when there are opportunities to play a third "O" in a row, or block an "X" three-in-a row
       winOrBlockOrCenterOrRandomCornerOrPlayRandom();
+
+      gameStatus = evalGameStatus();  // Evaluate game status after opposing player has responded, and update terminated state
+      if (gameStatus.toCharArray()[0] == envPlayerMark) {
+        reward = LOSE_REWARD;
+        terminated = true;
+      }
+      else if (gameStatus.toCharArray()[0] == opposingPlayerMark) {
