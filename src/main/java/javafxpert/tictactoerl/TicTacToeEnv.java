@@ -224,3 +224,15 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
     if (envPlayerMark == TicTacToeState.X_MARK) {
       opposingPlayerMark = TicTacToeState.O_MARK;
     }
+    else {
+      opposingPlayerMark = TicTacToeState.X_MARK;
+    }
+    resetEnvironment();
+  }
+
+  /**
+   * Evaluate the status of the game (in-progress, or who won)
+   *
+   * @return Indicator of in-progress, or who won
+   */
+  private String evalGameStatus() {
