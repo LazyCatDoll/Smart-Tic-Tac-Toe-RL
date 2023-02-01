@@ -236,3 +236,15 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
    * @return Indicator of in-progress, or who won
    */
   private String evalGameStatus() {
+    // Start with the assumption that all cells are occupied but nobody won
+    String gameStatus = TicTacToeState.GAME_STATUS_CATS_GAME;
+
+    // Check if this game is still in progress
+    for (int idx = 0; idx < TicTacToeState.NUM_CELLS; idx++) {
+      if (gameBoard.charAt(idx) ==  TicTacToeState.EMPTY) {
+        gameStatus = TicTacToeState.GAME_STATUS_IN_PROGRESS;
+        break;
+      }
+    }
+
+    // Check if X won
