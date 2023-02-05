@@ -272,3 +272,16 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
       //System.out.println("O won");
       System.out.print(envPlayerMark == TicTacToeState.X_MARK ? "O" : "o");
     }
+
+    if (gameStatus.equals(TicTacToeState.GAME_STATUS_CATS_GAME)) {
+      //System.out.println("Cat's game");
+      System.out.print(".");
+    }
+    return gameStatus;
+  }
+
+  /**
+   * Simple strategy that plays the first empty cell
+   */
+  private void playFirstEmptyCell() {
+    gameBoard.setCharAt(gameBoard.indexOf(Character.toString(TicTacToeState.EMPTY)), envPlayerMark);
