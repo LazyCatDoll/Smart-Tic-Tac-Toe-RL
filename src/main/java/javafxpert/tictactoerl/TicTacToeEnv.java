@@ -285,3 +285,9 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
    */
   private void playFirstEmptyCell() {
     gameBoard.setCharAt(gameBoard.indexOf(Character.toString(TicTacToeState.EMPTY)), envPlayerMark);
+  }
+
+  /**
+   * Simple strategy that plays a completely random empty cell
+   */
+  private void playRandomCell() {
