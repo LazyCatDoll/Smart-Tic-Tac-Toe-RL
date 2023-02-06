@@ -291,3 +291,10 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
    * Simple strategy that plays a completely random empty cell
    */
   private void playRandomCell() {
+    boolean played = false;
+    while (!played) {
+      int proposedCellIndex = (int)(Math.random() * TicTacToeState.NUM_CELLS);
+      if (gameBoard.charAt(proposedCellIndex) == TicTacToeState.EMPTY) {
+        gameBoard.setCharAt(proposedCellIndex, envPlayerMark);
+        played = true;
+      }
