@@ -325,3 +325,10 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
       return;
     }
     cellIndexToPlay = evalGameboardForBlock();
+    if (cellIndexToPlay != -1) {
+      gameBoard.setCharAt(cellIndexToPlay, envPlayerMark);
+    }
+    else {
+      playRandomCell();
+    }
+  }
