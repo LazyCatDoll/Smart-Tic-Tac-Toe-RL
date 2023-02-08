@@ -307,3 +307,12 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
   private void blockOrPlayRandom() {
     int cellIndexToPlay = evalGameboardForBlock();
     if (cellIndexToPlay != -1) {
+      gameBoard.setCharAt(cellIndexToPlay, envPlayerMark);
+    }
+    else {
+      playRandomCell();
+    }
+  }
+
+  /**
+   * Strategy that randomly places it mark except when there are opportunities to
