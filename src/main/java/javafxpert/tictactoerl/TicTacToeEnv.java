@@ -316,3 +316,12 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
 
   /**
    * Strategy that randomly places it mark except when there are opportunities to
+   * play third mark in a row, or to block a three-in-a row
+   */
+  private void winOrblockOrPlayRandom() {
+    int cellIndexToPlay = evalGameboardForWin();
+    if (cellIndexToPlay != -1) {
+      gameBoard.setCharAt(cellIndexToPlay, envPlayerMark);
+      return;
+    }
+    cellIndexToPlay = evalGameboardForBlock();
