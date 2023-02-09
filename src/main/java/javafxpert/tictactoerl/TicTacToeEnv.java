@@ -332,3 +332,14 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
       playRandomCell();
     }
   }
+
+  /**
+   * Strategy that prefers center or random corner placement, except when
+   * there are opportunities to play a third mark in a row, or block a three-in-a-row
+   * TODO: Refactor to remove repeating code
+   */
+  private void winOrBlockOrCenterOrRandomCornerOrPlayRandom() {
+    int cellIndexToPlay = evalGameboardForWin();
+    if (cellIndexToPlay != -1) {
+      gameBoard.setCharAt(cellIndexToPlay, envPlayerMark);
+      return;
