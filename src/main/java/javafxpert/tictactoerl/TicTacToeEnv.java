@@ -351,3 +351,13 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
     else {
       playRandomCornerOrCenterOrRandomCell();
     }
+  }
+
+  /**
+   * Play a random empty corner cell or center cell.
+   * Note that a counter is used to attempt that number of random
+   * placements, in case none of the corners or center cell is empty.
+   */
+  private void playRandomCornerOrCenterOrRandomCell() {
+    boolean played = false;
+    int counter = 0;
