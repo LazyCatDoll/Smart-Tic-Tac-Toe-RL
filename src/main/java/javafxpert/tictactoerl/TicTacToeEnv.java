@@ -361,3 +361,15 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
   private void playRandomCornerOrCenterOrRandomCell() {
     boolean played = false;
     int counter = 0;
+    while (!played && counter < 100) {
+      // Randomly choose 0, 2, 4, 6, 8 (corners or center)
+      int proposedCellIndex = (int)(Math.random() * 5) * 2;
+      if (gameBoard.charAt(proposedCellIndex) == TicTacToeState.EMPTY) {
+        gameBoard.setCharAt(proposedCellIndex, envPlayerMark);
+        played = true;
+      }
+      counter++;
+    }
+    if (!played) {
+      playRandomCell();
+    }
