@@ -373,3 +373,18 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
     if (!played) {
       playRandomCell();
     }
+  }
+
+  /**
+   * Evaluate the gameboard for an opportunity to block opposing player three-in-a row
+   * TODO: Modify with a less brute-force, and less verbose, approach.  Possibly factor with evalGameboardForWin() method
+   *
+   * @return Zero-based index of cell that would block, or -1 if no cells apply
+   */
+  private int evalGameboardForBlock() {
+    int blockingPlay = -1;
+    if (gameBoard.charAt(0) == opposingPlayerMark && gameBoard.charAt(1) == opposingPlayerMark && gameBoard.charAt(2) == TicTacToeState.EMPTY) {
+      blockingPlay = 2;
+    }
+    else if (gameBoard.charAt(0) == opposingPlayerMark && gameBoard.charAt(1) == TicTacToeState.EMPTY && gameBoard.charAt(2) == opposingPlayerMark) {
+      blockingPlay = 1;
