@@ -453,3 +453,13 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
       blockingPlay = 4;
     }
     else if (gameBoard.charAt(2) == TicTacToeState.EMPTY && gameBoard.charAt(4) == opposingPlayerMark && gameBoard.charAt(6) == opposingPlayerMark) {
+      blockingPlay = 2;
+    }
+    return blockingPlay;
+  }
+
+  /**
+   * Evaluate the gameboard for an opportunity to get three-in-a row
+   * TODO: Modify with a less brute-force, and less verbose, approach.  Possibly factor with evalGameboardForBlock() method
+   *
+   * @return Zero-based index of cell that would win, or -1 if no cells apply
