@@ -463,3 +463,9 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
    * TODO: Modify with a less brute-force, and less verbose, approach.  Possibly factor with evalGameboardForBlock() method
    *
    * @return Zero-based index of cell that would win, or -1 if no cells apply
+   */
+  private int evalGameboardForWin() {
+    int winningPlay = -1;
+    if (gameBoard.charAt(0) == envPlayerMark && gameBoard.charAt(1) == envPlayerMark && gameBoard.charAt(2) == TicTacToeState.EMPTY) {
+      winningPlay = 2;
+    }
