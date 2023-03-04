@@ -484,3 +484,15 @@ public class TicTacToeEnv implements Environment, EnvironmentServerInterface {
     else if (gameBoard.charAt(3) == TicTacToeState.EMPTY && gameBoard.charAt(4) == envPlayerMark && gameBoard.charAt(5) == envPlayerMark) {
       winningPlay = 3;
     }
+    else if (gameBoard.charAt(6) == envPlayerMark && gameBoard.charAt(7) == envPlayerMark && gameBoard.charAt(8) == TicTacToeState.EMPTY) {
+      winningPlay = 8;
+    }
+    else if (gameBoard.charAt(6) == envPlayerMark && gameBoard.charAt(7) == TicTacToeState.EMPTY && gameBoard.charAt(8) == envPlayerMark) {
+      winningPlay = 7;
+    }
+    else if (gameBoard.charAt(6) == TicTacToeState.EMPTY && gameBoard.charAt(7) == envPlayerMark && gameBoard.charAt(8) == envPlayerMark) {
+      winningPlay = 6;
+    }
+    else if (gameBoard.charAt(0) == envPlayerMark && gameBoard.charAt(3) == envPlayerMark && gameBoard.charAt(6) == TicTacToeState.EMPTY) {
+      winningPlay = 6;
+    }
