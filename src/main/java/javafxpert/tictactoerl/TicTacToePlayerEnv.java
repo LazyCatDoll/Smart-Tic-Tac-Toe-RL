@@ -26,3 +26,12 @@ import burlap.mdp.singleagent.SADomain;
 import burlap.mdp.singleagent.environment.Environment;
 import burlap.mdp.singleagent.environment.EnvironmentOutcome;
 import burlap.mdp.singleagent.environment.extensions.EnvironmentObserver;
+import burlap.mdp.singleagent.environment.extensions.EnvironmentServerInterface;
+
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * @author James L. Weaver (Twitter: @JavaFXpert)
+ */
+public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterface {
