@@ -57,3 +57,15 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   private boolean terminated = false;
 
   /**
+   * Reward given for the current action
+   */
+  private int reward = 0;
+
+  /**
+   * Most recent state, to be returned by currentObservation() method
+   */
+  TicTacToeState currentObservationState;
+
+  protected List<EnvironmentObserver> observers = new LinkedList<EnvironmentObserver>();
+
+  EpsilonGreedy epsilonGreedyPolicy;
