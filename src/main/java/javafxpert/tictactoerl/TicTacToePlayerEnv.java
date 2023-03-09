@@ -48,3 +48,12 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   /**
    * Game status, specifically, whether the game is in-progress, or if X won,
    * or if O won, or if it is cat's game (nobody won).
+   */
+  private String gameStatus;
+
+  /**
+   * Indicates whether the the game is in the terminal state
+   */
+  private boolean terminated = false;
+
+  /**
