@@ -35,3 +35,16 @@ import java.util.List;
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
 public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterface {
+  private static int WIN_REWARD = 10;
+  private static int LOSE_REWARD = -10;
+  private static int MOVE_REWARD = -1;
+
+  /**
+   * String representation of cells on the game board.
+   * For example: "XOIIXOXIO"
+   */
+  private StringBuffer gameBoard;
+
+  /**
+   * Game status, specifically, whether the game is in-progress, or if X won,
+   * or if O won, or if it is cat's game (nobody won).
