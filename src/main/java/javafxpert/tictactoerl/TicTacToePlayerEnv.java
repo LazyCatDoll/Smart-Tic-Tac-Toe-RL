@@ -69,3 +69,14 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   protected List<EnvironmentObserver> observers = new LinkedList<EnvironmentObserver>();
 
   EpsilonGreedy epsilonGreedyPolicy;
+
+  MoveActionType moveActionType;
+
+  public TicTacToePlayerEnv(EpsilonGreedy epsilonGreedyPolicy) {
+    this.epsilonGreedyPolicy = epsilonGreedyPolicy;
+
+    resetEnvironment();
+  }
+
+  @Override
+  public void addObservers(EnvironmentObserver... observers) {
