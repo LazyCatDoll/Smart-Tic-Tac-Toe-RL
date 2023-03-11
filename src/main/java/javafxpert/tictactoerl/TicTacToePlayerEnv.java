@@ -98,3 +98,15 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   }
 
   @Override
+  public List<EnvironmentObserver> observers() {
+    return this.observers;
+  }
+
+  @Override
+  public State currentObservation() {
+    return currentObservationState;
+  }
+
+  @Override
+  public EnvironmentOutcome executeAction(Action action) {
+    MoveAction humanAction = (MoveAction)action;
