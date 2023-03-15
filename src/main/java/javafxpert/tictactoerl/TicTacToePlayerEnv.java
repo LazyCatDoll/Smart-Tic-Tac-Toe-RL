@@ -122,3 +122,16 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
       // Illegal move attempted so don't change
       System.out.println("Illegal move attempted to cell " + cellNum);
     }
+    else {
+      gameBoard.setCharAt(cellNum, TicTacToeState.O_MARK);
+    }
+
+    gameStatus = evalGameStatus();
+    if (gameStatus.equals(TicTacToeState.GAME_STATUS_X_WON)) {
+      reward = WIN_REWARD;
+      terminated = true;
+    }
+    else if (gameStatus.equals(TicTacToeState.GAME_STATUS_O_WON)) {
+
+      // TODO: Consider removing this condition, as it doen't seem possible to encounter
+      reward = LOSE_REWARD;
