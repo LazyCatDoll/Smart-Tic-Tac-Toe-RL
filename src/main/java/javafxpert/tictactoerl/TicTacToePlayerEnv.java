@@ -135,3 +135,10 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
 
       // TODO: Consider removing this condition, as it doen't seem possible to encounter
       reward = LOSE_REWARD;
+      terminated = true;
+    }
+    else if (gameStatus.equals(TicTacToeState.GAME_STATUS_CATS_GAME)) {
+      reward = MOVE_REWARD;
+      terminated = true;
+    }
+    else {
