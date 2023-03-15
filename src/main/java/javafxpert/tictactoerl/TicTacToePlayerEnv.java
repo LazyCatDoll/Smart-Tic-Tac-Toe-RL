@@ -142,3 +142,14 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
       terminated = true;
     }
     else {
+      reward = 0;
+      terminated = false;
+
+      priorState.set(TicTacToeState.VAR_GAME_BOARD, gameBoard.toString());
+      priorState.set(TicTacToeState.VAR_GAME_STATUS, gameStatus);
+
+      // Play according the policy passed in to this environment
+
+      // Get the probability distribution of all actions from this state
+      List<ActionProb> actionProbs = epsilonGreedyPolicy.policyDistribution(priorState);
+      System.out.println("actionProbs: " + actionProbs);
