@@ -110,3 +110,15 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   @Override
   public EnvironmentOutcome executeAction(Action action) {
     MoveAction humanAction = (MoveAction)action;
+
+    TicTacToeState priorState = new TicTacToeState(gameBoard.toString(), gameStatus);
+
+    // actionId is the same as the cell number (0 - 8) of the move
+    int cellNum = humanAction.getActionId();
+
+    if (cellNum < 0 || cellNum >= TicTacToeState.NUM_CELLS ||
+        (gameBoard.charAt(cellNum) != TicTacToeState.EMPTY)) {
+
+      // Illegal move attempted so don't change
+      System.out.println("Illegal move attempted to cell " + cellNum);
+    }
