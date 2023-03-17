@@ -161,3 +161,17 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
       if (gameBoard.charAt(proposedCellIndex) == TicTacToeState.EMPTY) {
         gameBoard.setCharAt(proposedCellIndex, TicTacToeState.X_MARK);
       }
+      else {
+        System.out.println("Invalid move by player to cell: " + proposedCellIndex);
+      }
+
+
+      gameStatus = evalGameStatus();  // Evaluate game status after O has responded, and update terminated state
+      if (gameStatus.equals(TicTacToeState.GAME_STATUS_O_WON)) {
+        reward = 0;
+        terminated = true;
+      }
+      else if (gameStatus.equals(TicTacToeState.GAME_STATUS_CATS_GAME)) {
+        // TODO: Consider removing this condition, as it doen't seem possible to encounter
+        reward = 0;
+        terminated = true;
