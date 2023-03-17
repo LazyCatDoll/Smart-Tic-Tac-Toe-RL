@@ -153,3 +153,11 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
       // Get the probability distribution of all actions from this state
       List<ActionProb> actionProbs = epsilonGreedyPolicy.policyDistribution(priorState);
       System.out.println("actionProbs: " + actionProbs);
+
+      MoveAction playerAction = (MoveAction)epsilonGreedyPolicy.action(priorState);
+      System.out.println("playerAction.getActionId(): " + (playerAction.getActionId()));
+      int proposedCellIndex = playerAction.getActionId();
+
+      if (gameBoard.charAt(proposedCellIndex) == TicTacToeState.EMPTY) {
+        gameBoard.setCharAt(proposedCellIndex, TicTacToeState.X_MARK);
+      }
