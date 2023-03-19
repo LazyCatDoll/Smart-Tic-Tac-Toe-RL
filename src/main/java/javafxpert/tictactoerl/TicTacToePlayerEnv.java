@@ -175,3 +175,14 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
         // TODO: Consider removing this condition, as it doen't seem possible to encounter
         reward = 0;
         terminated = true;
+      }
+    }
+
+    TicTacToeState newState = new TicTacToeState(gameBoard.toString(), gameStatus);
+
+    currentObservationState = newState.copy();
+
+    EnvironmentOutcome environmentOutcome =
+        new EnvironmentOutcome(priorState, action, newState, reward, terminated);
+
+    return environmentOutcome;
