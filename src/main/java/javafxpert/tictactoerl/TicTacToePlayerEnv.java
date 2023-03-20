@@ -192,3 +192,13 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   public double lastReward() {
     return reward;
   }
+
+  @Override
+  public boolean isInTerminalState() {
+    return terminated;
+  }
+
+  @Override
+  public void resetEnvironment() {
+    gameBoard = new StringBuffer(TicTacToeState.ONE_X_BOARD);
+    gameStatus = TicTacToeState.GAME_STATUS_IN_PROGRESS;
