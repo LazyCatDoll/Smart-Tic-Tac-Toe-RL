@@ -186,3 +186,9 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
         new EnvironmentOutcome(priorState, action, newState, reward, terminated);
 
     return environmentOutcome;
+  }
+
+  @Override
+  public double lastReward() {
+    return reward;
+  }
