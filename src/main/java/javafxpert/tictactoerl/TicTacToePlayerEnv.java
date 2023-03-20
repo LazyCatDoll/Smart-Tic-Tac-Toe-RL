@@ -202,3 +202,10 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   public void resetEnvironment() {
     gameBoard = new StringBuffer(TicTacToeState.ONE_X_BOARD);
     gameStatus = TicTacToeState.GAME_STATUS_IN_PROGRESS;
+
+    currentObservationState = new TicTacToeState(gameBoard.toString(), gameStatus);
+
+    terminated = false;
+  }
+
+  public EnvironmentOutcome executeActionWithGameBoard(MoveAction moveAction, String gameBoardStr) {
