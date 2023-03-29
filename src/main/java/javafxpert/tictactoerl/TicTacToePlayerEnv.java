@@ -209,3 +209,14 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
   }
 
   public EnvironmentOutcome executeActionWithGameBoard(MoveAction moveAction, String gameBoardStr) {
+    this.gameBoard = new StringBuffer(gameBoardStr);
+    this.gameStatus = TicTacToeState.GAME_STATUS_IN_PROGRESS;
+    return executeAction(moveAction);
+  }
+
+  /**
+   * Evaluate the status of the game (in-progress, or who won)
+   *
+   * @return Indicator of in-progress, or who won
+   */
+  private String evalGameStatus() {
