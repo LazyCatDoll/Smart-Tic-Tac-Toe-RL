@@ -256,3 +256,9 @@ public class TicTacToePlayerEnv implements Environment, EnvironmentServerInterfa
       //System.out.println("O won");
       System.out.print("o");
     }
+
+    if (gameStatus.equals(TicTacToeState.GAME_STATUS_CATS_GAME)) {
+      //System.out.println("Cat's game");
+      System.out.print(".");
+    }
+    return gameStatus;
