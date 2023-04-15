@@ -1,2 +1,2 @@
 /*
- * Copyright 2016 the original a
+ * Copyright 2016 the original author 
