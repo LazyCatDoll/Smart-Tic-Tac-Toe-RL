@@ -15,4 +15,4 @@
  */
 package javafxpert.tictactoerl;
 
-import burlap.be
+import burlap.behavior.singlea
