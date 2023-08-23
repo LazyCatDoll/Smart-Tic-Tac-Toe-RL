@@ -15,4 +15,4 @@
  */
 package javafxpert.tictactoerl;
 
-import burlap.behavior.singlea
+import burlap.behavior.singleagent.Episode;
