@@ -17,4 +17,4 @@ package javafxpert.tictactoerl;
 
 import burlap.behavior.singleagent.Episode;
 import burlap.behavior.singleagent.auxiliary.EpisodeSequenceVisualizer;
-import burlap.behavior.singleagent.learn
+import burlap.behavior.singleagent.learning.Learning
