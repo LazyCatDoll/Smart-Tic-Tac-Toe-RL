@@ -25,4 +25,4 @@ import burlap.statehashing.simple.SimpleHashableStateFactory;
 import burlap.visualizer.Visualizer;
 
 /**
- * @author James L. Weaver (
+ * @author James L. Weaver (Twitter: 
