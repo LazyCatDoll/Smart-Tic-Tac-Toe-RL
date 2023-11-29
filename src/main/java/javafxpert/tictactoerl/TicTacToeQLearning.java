@@ -27,4 +27,4 @@ import burlap.visualizer.Visualizer;
 /**
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
-publi
+public class Ti
