@@ -28,4 +28,4 @@ import burlap.visualizer.Visualizer;
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
 public class TicTacToeQLearning {
-  pub
+  public stati
