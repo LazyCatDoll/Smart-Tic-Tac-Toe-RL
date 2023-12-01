@@ -27,4 +27,5 @@ import burlap.visualizer.Visualizer;
 /**
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
-public class TicTacToeQLear
+public class TicTacToeQLearning {
+  pub
