@@ -28,4 +28,5 @@ import burlap.visualizer.Visualizer;
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
 public class TicTacToeQLearning {
-  public static void main(String[] 
+  public static void main(String[] args) {
+  
