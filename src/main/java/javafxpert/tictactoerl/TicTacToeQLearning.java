@@ -29,4 +29,5 @@ import burlap.visualizer.Visualizer;
  */
 public class TicTacToeQLearning {
   public static void main(String[] args) {
-    TicTacToeWorld ticTacToeWorld = new TicTacToeWorld()
+    TicTacToeWorld ticTacToeWorld = new TicTacToeWorld();
+  
