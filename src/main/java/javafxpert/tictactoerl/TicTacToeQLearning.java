@@ -30,4 +30,4 @@ import burlap.visualizer.Visualizer;
 public class TicTacToeQLearning {
   public static void main(String[] args) {
     TicTacToeWorld ticTacToeWorld = new TicTacToeWorld();
-    SADomain domain = ticTacToeWo
+    SADomain domain = ticTacToeWorld.gen
