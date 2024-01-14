@@ -31,4 +31,5 @@ public class TicTacToeQLearning {
   public static void main(String[] args) {
     TicTacToeWorld ticTacToeWorld = new TicTacToeWorld();
     SADomain domain = ticTacToeWorld.generateDomain();
-    HashableStateFactory hashingFactory = new SimpleHashableStateFactor
+    HashableStateFactory hashingFactory = new SimpleHashableStateFactory();
+  
