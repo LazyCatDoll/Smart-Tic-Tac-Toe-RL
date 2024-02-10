@@ -33,4 +33,6 @@ public class TicTacToeQLearning {
     SADomain domain = ticTacToeWorld.generateDomain();
     HashableStateFactory hashingFactory = new SimpleHashableStateFactory();
     LearningAgent agent = new QLearning(domain, 0.90, hashingFactory, 0.0, 1.0);
-    TicTacToeEnv env = new TicTacToeE
+    TicTacToeEnv env = new TicTacToeEnv();
+
+  
