@@ -37,4 +37,4 @@ public class TicTacToeQLearning {
 
     //run learning for 5000 episodes
     String outputPath = "output/";
-    for(int i
+    for(int i = 0; i
