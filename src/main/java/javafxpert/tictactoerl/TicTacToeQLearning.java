@@ -39,3 +39,5 @@ public class TicTacToeQLearning {
     String outputPath = "output/";
     for(int i = 0; i < 5000; i++){
       Episode e = agent.runLearningEpisode(env);
+
+      e
