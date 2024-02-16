@@ -40,4 +40,4 @@ public class TicTacToeQLearning {
     for(int i = 0; i < 5000; i++){
       Episode e = agent.runLearningEpisode(env);
 
-      e
+      e.write(out
