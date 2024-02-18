@@ -42,4 +42,4 @@ public class TicTacToeQLearning {
 
       e.write(outputPath + "ql_" + i);
 
-   
+      //res
