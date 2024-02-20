@@ -44,3 +44,6 @@ public class TicTacToeQLearning {
 
       //reset environment for next learning episode
       env.resetEnvironment();
+    }
+
+//TOD
