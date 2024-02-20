@@ -46,4 +46,4 @@ public class TicTacToeQLearning {
       env.resetEnvironment();
     }
 
-//TOD
+//TODO: Atte
