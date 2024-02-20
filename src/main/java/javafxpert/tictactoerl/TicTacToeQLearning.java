@@ -43,4 +43,4 @@ public class TicTacToeQLearning {
       e.write(outputPath + "ql_" + i);
 
       //reset environment for next learning episode
-      e
+      env.resetEnviro
