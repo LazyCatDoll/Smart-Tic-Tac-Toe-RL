@@ -47,4 +47,4 @@ public class TicTacToeQLearning {
     }
 
 //TODO: Attempt to get this visualization working
-//    VisualActionObserver observer = new VisualActionObserv
+//    VisualActionObserver observer = new VisualActionObserver(ticTacTo
