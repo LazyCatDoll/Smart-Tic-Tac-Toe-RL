@@ -47,4 +47,4 @@ public class TicTacToeQLearning {
     }
 
 //TODO: Attempt to get this visualization working
-//    VisualActionObserver observer = new VisualActionObserver(ticTacToeWorld.getVisualize
+//    VisualActionObserver observer = new VisualActionObserver(ticTacToeWorld.getVisualizer());
