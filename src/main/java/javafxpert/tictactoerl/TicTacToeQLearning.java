@@ -51,4 +51,4 @@ public class TicTacToeQLearning {
 //		observer.initGUI();
 //		env.addObservers(observer);
 
-    Visualizer v = t
+    Visualizer v = ticTacToeWo
