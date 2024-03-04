@@ -52,4 +52,4 @@ public class TicTacToeQLearning {
 //		env.addObservers(observer);
 
     Visualizer v = ticTacToeWorld.getVisualizer();
-    new EpisodeSequenceVisualiz
+    new EpisodeSequenceVisualizer(v, dom
