@@ -15,3 +15,13 @@
  * limitations under the License.
  */
 package javafxpert.tictactoerl;
+
+import burlap.behavior.policy.EpsilonGreedy;
+import burlap.behavior.singleagent.Episode;
+import burlap.behavior.singleagent.auxiliary.EpisodeSequenceVisualizer;
+import burlap.behavior.singleagent.learning.LearningAgent;
+import burlap.behavior.singleagent.learning.tdmethods.QLearning;
+import burlap.mdp.core.action.Action;
+import burlap.mdp.core.action.SimpleAction;
+import burlap.mdp.singleagent.SADomain;
+import burlap.mdp.singleagent.environment.EnvironmentOutcome;
