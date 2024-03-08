@@ -40,3 +40,10 @@ public class TicTacToeQPlaying {
     QLearning qLearningAgent = new QLearning(domain, 0.90, hashingFactory, 0.0, 1.0);
 
     EpsilonGreedy greedyPolicy = new EpsilonGreedy(qLearningAgent, 0.5);
+
+    TicTacToeEnv env = new TicTacToeEnv();
+
+    String outputPath = "output/";
+
+    env.setEnvPlayerMark(TicTacToeState.O_MARK);
+    for(int i = 0; i < 4000; i++){
