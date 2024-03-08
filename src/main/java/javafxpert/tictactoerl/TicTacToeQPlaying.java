@@ -47,3 +47,13 @@ public class TicTacToeQPlaying {
 
     env.setEnvPlayerMark(TicTacToeState.O_MARK);
     for(int i = 0; i < 4000; i++){
+      Episode e = qLearningAgent.runLearningEpisode(env);
+
+      e.write(outputPath + "ql_" + i);
+
+      //reset environment for next learning episode
+      env.resetEnvironment();
+    }
+
+    System.out.println();
+    System.out.println();
