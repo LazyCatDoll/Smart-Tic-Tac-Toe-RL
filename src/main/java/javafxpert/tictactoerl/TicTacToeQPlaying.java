@@ -32,3 +32,11 @@ import burlap.visualizer.Visualizer;
 /**
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
+public class TicTacToeQPlaying {
+  public static void main(String[] args) {
+    TicTacToeWorld ticTacToeWorld = new TicTacToeWorld();
+    SADomain domain = ticTacToeWorld.generateDomain();
+    HashableStateFactory hashingFactory = new SimpleHashableStateFactory();
+    QLearning qLearningAgent = new QLearning(domain, 0.90, hashingFactory, 0.0, 1.0);
+
+    EpsilonGreedy greedyPolicy = new EpsilonGreedy(qLearningAgent, 0.5);
