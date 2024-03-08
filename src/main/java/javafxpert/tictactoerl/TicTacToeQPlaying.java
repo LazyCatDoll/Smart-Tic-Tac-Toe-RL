@@ -25,3 +25,10 @@ import burlap.mdp.core.action.Action;
 import burlap.mdp.core.action.SimpleAction;
 import burlap.mdp.singleagent.SADomain;
 import burlap.mdp.singleagent.environment.EnvironmentOutcome;
+import burlap.statehashing.HashableStateFactory;
+import burlap.statehashing.simple.SimpleHashableStateFactory;
+import burlap.visualizer.Visualizer;
+
+/**
+ * @author James L. Weaver (Twitter: @JavaFXpert)
+ */
