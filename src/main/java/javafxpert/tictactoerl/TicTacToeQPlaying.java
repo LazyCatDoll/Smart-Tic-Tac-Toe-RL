@@ -85,3 +85,11 @@ public class TicTacToeQPlaying {
     Action humanAction = new MoveAction(4);
     EnvironmentOutcome environmentOutcome = ticTacToePlayerEnv.executeAction(humanAction);
     System.out.println("environmentOutcome.op: " + environmentOutcome.op);
+
+    System.out.println();
+    MoveAction humanAction2 = new MoveAction(5);
+    EnvironmentOutcome environmentOutcome2 = ticTacToePlayerEnv.executeActionWithGameBoard(humanAction2, "OIIXXIXIO");
+    System.out.println("environmentOutcome2.op: " + environmentOutcome2.op);
+
+  }
+}
