@@ -67,3 +67,11 @@ public class TicTacToeQPlaying {
       //reset environment for next learning episode
       env.resetEnvironment();
     }
+
+//TODO: Attempt to get this visualization working
+//    VisualActionObserver observer = new VisualActionObserver(ticTacToeWorld.getVisualizer());
+//		observer.initGUI();
+//		env.addObservers(observer);
+
+    Visualizer v = ticTacToeWorld.getVisualizer();
+    new EpisodeSequenceVisualizer(v, domain, outputPath);
