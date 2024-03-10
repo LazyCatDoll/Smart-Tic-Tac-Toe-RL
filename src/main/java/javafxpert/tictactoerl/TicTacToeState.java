@@ -23,3 +23,8 @@ import burlap.mdp.core.state.annotations.DeepCopyState;
 
 import java.util.Arrays;
 import java.util.List;
+
+/**
+ * @author James L. Weaver (Twitter: @JavaFXpert)
+ */
+@DeepCopyState
