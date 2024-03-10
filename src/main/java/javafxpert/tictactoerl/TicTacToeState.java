@@ -28,3 +28,11 @@ import java.util.List;
  * @author James L. Weaver (Twitter: @JavaFXpert)
  */
 @DeepCopyState
+public class TicTacToeState implements MutableState {
+  /**
+   * Constant for number of cells on a Tac-Tac-Toe board
+   */
+  public static int NUM_CELLS = 9;
+
+  public static String VAR_GAME_BOARD = "gameBoard";
+  public static String VAR_GAME_STATUS = "gameStatus";
