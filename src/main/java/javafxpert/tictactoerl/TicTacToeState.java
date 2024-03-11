@@ -52,3 +52,12 @@ public class TicTacToeState implements MutableState {
 
   /**
    * String representation of cells on the game board.
+   * For example: "XOIIXOXIO"
+   */
+  public String gameBoard = EMPTY_BOARD;
+
+  /**
+   * Game status, specifically, whether the game is in-progress, or if X won,
+   * or if O won, or if it is cat's game (nobody won).
+   */
+  public String gameStatus = GAME_STATUS_IN_PROGRESS;
