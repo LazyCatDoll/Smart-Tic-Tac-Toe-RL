@@ -61,3 +61,9 @@ public class TicTacToeState implements MutableState {
    * or if O won, or if it is cat's game (nobody won).
    */
   public String gameStatus = GAME_STATUS_IN_PROGRESS;
+
+  private final static List<Object> keys =
+      Arrays.asList(VAR_GAME_BOARD, VAR_GAME_STATUS);
+
+  public TicTacToeState() {
+  }
