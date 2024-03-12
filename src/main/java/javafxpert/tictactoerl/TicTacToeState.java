@@ -84,3 +84,9 @@ public class TicTacToeState implements MutableState {
     else{
       throw new UnknownKeyException(variableKey);
     }
+    return this;
+  }
+
+  @Override
+  public List<Object> variableKeys() {
+    return keys;
