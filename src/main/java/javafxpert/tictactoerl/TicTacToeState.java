@@ -67,3 +67,8 @@ public class TicTacToeState implements MutableState {
 
   public TicTacToeState() {
   }
+
+  public TicTacToeState(String gameBoard, String gameStatus) {
+    this.gameBoard = gameBoard;
+    this.gameStatus = gameStatus;
+  }
