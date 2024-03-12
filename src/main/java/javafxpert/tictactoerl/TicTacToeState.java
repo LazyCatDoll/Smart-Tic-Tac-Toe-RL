@@ -72,3 +72,15 @@ public class TicTacToeState implements MutableState {
     this.gameBoard = gameBoard;
     this.gameStatus = gameStatus;
   }
+
+  @Override
+  public MutableState set(Object variableKey, Object value) {
+    if(variableKey.equals(VAR_GAME_BOARD)){
+      this.gameBoard = (String)value;
+    }
+    else if(variableKey.equals(VAR_GAME_STATUS)){
+      this.gameStatus = (String)value;
+    }
+    else{
+      throw new UnknownKeyException(variableKey);
+    }
