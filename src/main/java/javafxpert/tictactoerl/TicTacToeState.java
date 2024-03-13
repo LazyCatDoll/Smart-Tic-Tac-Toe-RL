@@ -99,3 +99,8 @@ public class TicTacToeState implements MutableState {
     }
     else if(variableKey.equals(VAR_GAME_STATUS)){
       return this.gameStatus;
+    }
+    throw new UnknownKeyException(variableKey);
+  }
+
+  @Override
