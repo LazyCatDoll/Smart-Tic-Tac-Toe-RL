@@ -90,3 +90,12 @@ public class TicTacToeState implements MutableState {
   @Override
   public List<Object> variableKeys() {
     return keys;
+  }
+
+  @Override
+  public Object get(Object variableKey) {
+    if(variableKey.equals(VAR_GAME_BOARD)){
+      return this.gameBoard;
+    }
+    else if(variableKey.equals(VAR_GAME_STATUS)){
+      return this.gameStatus;
