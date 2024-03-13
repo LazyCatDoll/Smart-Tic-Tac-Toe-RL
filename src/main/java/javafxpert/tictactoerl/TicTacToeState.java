@@ -104,3 +104,12 @@ public class TicTacToeState implements MutableState {
   }
 
   @Override
+  public TicTacToeState copy() {
+    return new TicTacToeState(gameBoard, gameStatus);
+  }
+
+  @Override
+  public String toString() {
+    return StateUtilities.stateToString(this);
+  }
+}
