@@ -21,3 +21,9 @@ import burlap.mdp.core.state.State;
 import burlap.mdp.singleagent.SADomain;
 import burlap.shell.visual.VisualExplorer;
 import burlap.visualizer.StatePainter;
+import burlap.visualizer.StateRenderLayer;
+import burlap.visualizer.Visualizer;
+
+import java.awt.*;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Rectangle2D;
