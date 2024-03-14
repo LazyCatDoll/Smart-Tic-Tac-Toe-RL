@@ -17,3 +17,7 @@
 package javafxpert.tictactoerl;
 
 import burlap.mdp.auxiliary.DomainGenerator;
+import burlap.mdp.core.state.State;
+import burlap.mdp.singleagent.SADomain;
+import burlap.shell.visual.VisualExplorer;
+import burlap.visualizer.StatePainter;
