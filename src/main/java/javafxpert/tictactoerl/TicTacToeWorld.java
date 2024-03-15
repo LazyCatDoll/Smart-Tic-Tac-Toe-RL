@@ -39,3 +39,12 @@ public class TicTacToeWorld implements DomainGenerator {
     domain.addActionType(new MoveActionType());
     return domain;
   }
+
+  public StateRenderLayer getStateRenderLayer(){
+    StateRenderLayer rl = new StateRenderLayer();
+    rl.addStatePainter(new TicTacToeWorld.WallPainter());
+    rl.addStatePainter(new TicTacToeWorld.AgentPainter());
+
+
+    return rl;
+  }
