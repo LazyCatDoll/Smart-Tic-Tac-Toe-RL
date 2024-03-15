@@ -27,3 +27,15 @@ import burlap.visualizer.Visualizer;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
+
+/**
+ * @author James L. Weaver (Twitter: @JavaFXpert)
+ */
+public class TicTacToeWorld implements DomainGenerator {
+  @Override
+  public SADomain generateDomain() {
+    SADomain domain = new SADomain();
+
+    domain.addActionType(new MoveActionType());
+    return domain;
+  }
