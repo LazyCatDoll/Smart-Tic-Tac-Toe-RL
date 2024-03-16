@@ -77,3 +77,8 @@ public class TicTacToeWorld implements DomainGenerator {
       }
 
       for(int row = 1; row < NUM_ROWS_COLS; row++){
+        float ry = row * height;
+        g2.drawLine(0, (int)ry, (int)cWidth, (int)ry);
+      }
+    }
+  }
