@@ -67,3 +67,13 @@ public class TicTacToeWorld implements DomainGenerator {
       float fHeight = NUM_ROWS_COLS;
 
       //determine the width of a single cell
+      //on our canvas such that the whole map can be painted
+      float width = cWidth / fWidth;
+      float height = cHeight / fHeight;
+
+      for(int col = 1; col < NUM_ROWS_COLS; col++){
+        float rx = col * width;
+        g2.drawLine((int)rx, 0, (int)rx, (int)cHeight);
+      }
+
+      for(int row = 1; row < NUM_ROWS_COLS; row++){
