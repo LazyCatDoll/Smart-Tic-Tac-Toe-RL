@@ -61,3 +61,9 @@ public class TicTacToeWorld implements DomainGenerator {
       g2.setStroke(new BasicStroke(5));
 
       g2.setColor(Color.BLACK);
+
+      //set up floats for the width and height of our domain
+      float fWidth = NUM_ROWS_COLS;
+      float fHeight = NUM_ROWS_COLS;
+
+      //determine the width of a single cell
