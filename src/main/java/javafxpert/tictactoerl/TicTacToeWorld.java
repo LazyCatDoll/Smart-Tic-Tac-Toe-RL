@@ -48,3 +48,16 @@ public class TicTacToeWorld implements DomainGenerator {
 
     return rl;
   }
+
+  public Visualizer getVisualizer(){
+    return new Visualizer(this.getStateRenderLayer());
+  }
+
+  public class WallPainter implements StatePainter {
+    private int NUM_ROWS_COLS = 3;
+
+    public void paint(Graphics2D g2, State s, float cWidth, float cHeight) {
+
+      g2.setStroke(new BasicStroke(5));
+
+      g2.setColor(Color.BLACK);
