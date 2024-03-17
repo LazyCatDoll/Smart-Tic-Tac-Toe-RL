@@ -82,3 +82,12 @@ public class TicTacToeWorld implements DomainGenerator {
       }
     }
   }
+
+  public class AgentPainter implements StatePainter {
+
+    private int NUM_ROWS = 3;
+    private int NUM_COLS = 3;
+
+    @Override
+    public void paint(Graphics2D g2, State s,
+                      float cWidth, float cHeight) {
