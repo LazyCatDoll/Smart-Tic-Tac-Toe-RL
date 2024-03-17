@@ -91,3 +91,21 @@ public class TicTacToeWorld implements DomainGenerator {
     @Override
     public void paint(Graphics2D g2, State s,
                       float cWidth, float cHeight) {
+
+      g2.setStroke(new BasicStroke(5));
+
+      //marks will be filled in gray
+      g2.setColor(Color.BLUE);
+
+      //set up floats for the width and height of our domain
+      float fWidth = NUM_COLS;
+      float fHeight = NUM_ROWS;
+
+      //determine the width of a single cell on our canvas
+      //such that the whole map can be painted
+      float width = cWidth / fWidth;
+      float height = cHeight / fHeight;
+
+      String gameBoard = (String)s.get(TicTacToeState.VAR_GAME_BOARD);
+
+      //pass through each cell of our board, and it it's an X or O, it on our
