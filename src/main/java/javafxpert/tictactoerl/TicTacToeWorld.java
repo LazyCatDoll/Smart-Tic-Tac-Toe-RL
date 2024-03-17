@@ -109,3 +109,6 @@ public class TicTacToeWorld implements DomainGenerator {
       String gameBoard = (String)s.get(TicTacToeState.VAR_GAME_BOARD);
 
       //pass through each cell of our board, and it it's an X or O, it on our
+      //canvas of dimension width x height
+      for(int col = 0; col < NUM_ROWS; col++){
+        for(int row = 0; row < NUM_COLS; row++){
