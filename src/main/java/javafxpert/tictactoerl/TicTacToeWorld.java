@@ -129,3 +129,13 @@ public class TicTacToeWorld implements DomainGenerator {
             //paint the mark (X or O)
             if (cellMark == TicTacToeState.O_MARK) {
               g2.draw(new Ellipse2D.Float(rx + width * 0.25f, ry + height * 0.25f, width * .50f, height * .50f));
+            }
+            else {
+              g2.drawLine((int)(rx + width * 0.25f), (int)(ry + height * 0.25f), (int)(rx + width * 0.75), (int)(ry + height * 0.75));
+              g2.drawLine((int)(rx + width * 0.75), (int)(ry + height * 0.25f), (int)(rx + width * 0.25f), (int)(ry + height * 0.75));
+            }
+          }
+        }
+      }
+    }
+  }
