@@ -112,3 +112,10 @@ public class TicTacToeWorld implements DomainGenerator {
       //canvas of dimension width x height
       for(int col = 0; col < NUM_ROWS; col++){
         for(int row = 0; row < NUM_COLS; row++){
+
+          //TODO: Create utilities, perhaps with an associated enum, for reading contents of cells from the gameboard
+
+          char cellMark = gameBoard.charAt(row * NUM_ROWS + col);
+
+          //is there a mark here?
+          if(cellMark != TicTacToeState.EMPTY) {
