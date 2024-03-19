@@ -161,3 +161,7 @@ public class TicTacToeWorld implements DomainGenerator {
     exp.addKeyAction("6", new MoveAction(6));
     exp.addKeyAction("7", new MoveAction(7));
     exp.addKeyAction("8", new MoveAction(8));
+
+    exp.initGUI();
+  }
+}
