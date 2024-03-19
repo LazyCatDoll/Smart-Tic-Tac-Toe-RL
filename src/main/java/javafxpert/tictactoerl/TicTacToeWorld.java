@@ -139,3 +139,14 @@ public class TicTacToeWorld implements DomainGenerator {
       }
     }
   }
+
+
+  public static void main(String [] args){
+    TicTacToeWorld gen = new TicTacToeWorld();
+    SADomain domain = gen.generateDomain();
+    State initialState = new TicTacToeState(TicTacToeState.EMPTY_BOARD,
+        TicTacToeState.GAME_STATUS_IN_PROGRESS);
+
+    TicTacToeEnv env = new TicTacToeEnv();
+
+    Visualizer v = gen.getVisualizer();
