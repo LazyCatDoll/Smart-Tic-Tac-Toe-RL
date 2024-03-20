@@ -11,3 +11,11 @@ https://github.com/LazyCatDoll/Smart-Tic-Tac-Toe-RL
 The Q-Learning algorithm can be leveraged by running the TicTacToeQLearning.java program. Interaction with VisualExplorer can be achieved via the TicTacToeWorld.java
 
 Future enhancements that are planned include a varied range of strategies for 'O', visual improvements, visualizations of the Q-Learning table and more.
+
+Participation, suggestions and collaborations are most welcome.
+
+Regards,
+LazyCatDoll
+
+Reference:
+Reinforcement Learning: An Introduction, 2016 https://webdocs.cs.ualberta.ca/~sutton/book/bookdraft2016sep.pdf
